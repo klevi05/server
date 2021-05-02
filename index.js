@@ -14,7 +14,7 @@ mongoose.connect(process.env.ACCES_DATABASE_LINK, { useNewUrlParser : true, useU
 app.use(cors());
 app.use(express.json());
 app.use('/', First)
-app.use('/user', post);
+app.use('/user', post);         
 
 app.listen(process.env.PORT, ()=>{
     console.log('Succses')
