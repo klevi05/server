@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server side for aquatary e commerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klevi05/aquatary.git"
+  },
+  "author": "Klevis Dervishi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klevi05/aquatary/issues"
+  },
+  "homepage": "https://github.com/klevi05/aquatary#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.6",
+    "nodemon": "^2.0.7"
+  }
+}
