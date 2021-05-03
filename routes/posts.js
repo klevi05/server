@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express();
+const stripe = require('stripe')(process.env.STRIPE_KEY)
 const User = require('../models/User');
 
 router.post('/post', async (req, res) =>{
@@ -18,13 +19,8 @@ router.post('/post', async (req, res) =>{
     }
     return res.status(200).json();
 })
-router.get('/retrive:id', async (req, res)=>{
-    try {
-        const post = await User.findById(req.params.id);
-        res.status(200).send(post)
-    } catch (error) {
-        return res.status(401).json()
-    }
+router.get('/payment', async (req, res)=>{
+    
 })
 
 
